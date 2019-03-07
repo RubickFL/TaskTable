@@ -15,7 +15,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    qDebug() << "Main widget is activated";
+    logger::log("Main widget is activated");
+
 
     // setups
     ui->setupUi(this);
@@ -23,7 +24,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
 MainWindow::~MainWindow() {
-    qDebug() << "Main widget closed";
+    logger::log("Main widget closed");
+
 
     // deallocations
     delete ui;

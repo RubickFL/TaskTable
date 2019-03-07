@@ -19,7 +19,8 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h \
     core/settings.h \
     core/core.h \
-    authwindow/authorizationwindow.h
+    authwindow/authorizationwindow.h \
+    core/logging/logging.h
 
 FORMS    += mainwindow.ui \
     authwindow/authorizationwindow.ui

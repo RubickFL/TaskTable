@@ -14,7 +14,7 @@
 
 int main(int argc, char* argv[]) {
     QApplication app(argc, argv);
-    qDebug() << "Showing start window...";
+    logger::log("Programm started normally");
 
     #if AUTHORIZATION_NEEDED == 0
     MainWindow startWindow;

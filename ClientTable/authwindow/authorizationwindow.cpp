@@ -8,6 +8,7 @@
 #include "authorizationwindow.h"
 #include "ui_authorizationwindow.h"
 #include <QDebug>
+#include "core/logging/logging.h"
 
 
 // CONSTRUCT AND DESTRUCT -------------------------------------------------------------
@@ -15,7 +16,8 @@ AuthorizationWindow::AuthorizationWindow(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::AuthorizationWindow)
 {
-    qDebug() << "Authorization widget activated";
+    logger::log("Authwindow created");
+
 
     // setups
     ui->setupUi(this);
@@ -24,7 +26,8 @@ AuthorizationWindow::AuthorizationWindow(QWidget *parent) :
 
 
 AuthorizationWindow::~AuthorizationWindow() {
-    qDebug() << "Authorization widget closed";
+   logger::log("Authorization widget closed");
+
 
     // deallocations
     delete ui;

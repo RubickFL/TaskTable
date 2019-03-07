@@ -10,6 +10,7 @@
 
 
 #include "settings.h"
+#include "logging/logging.h"
 
 
 #endif // CORE
